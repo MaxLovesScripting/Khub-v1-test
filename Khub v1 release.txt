@@ -1,0 +1,61 @@
+local Library = loadstring(game:HttpGet("https://pastebin.com/raw/vff1bQ9F"))()
+local Window = Library.CreateLib("Khub v1 BETA", "Synapse")
+
+--New Tab
+
+local Tab = Window:NewTab("Player")
+local Section = Tab:NewSection("Player")
+
+Section:NewButton("Fly gui v3", "ButtonInfo", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/XNEOFF/FlyGuiV3/main/FlyGuiV3.txt"))()
+end)
+
+Section:NewSlider("Walkspeed", "SliderInfo", 1000, 0, function(s) -- 1000 (MaxValue) | 0 (MinValue)
+    game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = s
+end)
+
+--New tab 
+
+local Tab = Window:NewTab("Others")
+local Section = Tab:NewSection("Others")
+
+Section:NewTextBox("Set WalkSpeed", "Info", function(txt)
+    game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = txt
+end)
+
+Section:NewTextBox("Set JumpPower", "Info", function(txt)
+    game.Players.LocalPlayer.Character.Humanoid.JumpPower = txt
+end)
+
+Section:NewButton("Reset Walkspeed", "ButtonInfo", function()
+    game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 16
+end)
+
+Section:NewButton("Reset Jumpower", "ButtonInfo", function()
+    game.Players.LocalPlayer.Character.Humanoid.JumpPower = 50
+end)
+
+--New tab 
+
+local Tab = Window:NewTab("Scripts")
+local Section = Tab:NewSection("Scripts")
+
+Section:NewButton("infinite yield", "ButtonInfo", function()
+           loadstring(game:HttpGet('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'))()
+end)
+
+Section:NewButton("nameless admin", "ButtonInfo", function()
+           loadstring(game:HttpGet("https://raw.githubusercontent.com/FilteringEnabled/NamelessAdmin/main/Source"))()
+end)
+
+Section:NewButton("Ghub v11 credits ghacks", "ButtonInfo", function()
+           loadstring(game:HttpGet("https://raw.githubusercontent.com/gclich/GHUBUIV11/main/GHUBV11S.txt"))()
+end)
+
+Section:NewButton("animation gui", "ButtonInfo", function()
+           loadstring(game:HttpGet("https://raw.githubusercontent.com/gclich/G-animation-/main/ANIMATIONCHANGER.txt"))()loadstring(game:HttpGet("https://raw.githubusercontent.com/gclich/G-animation-/main/ANIMATIONCHANGER.txt"))()loadstring(game:HttpGet("https://raw.githubusercontent.com/gclich/G-animation-/main/ANIMATIONCHANGER.txt"))()
+end)
+
+Section:NewButton("Ghost Hub", "ButtonInfo", function()
+           loadstring(game:HttpGet('https://raw.githubusercontent.com/GhostPlayer352/Test4/main/GhostHub'))()
+end)
